@@ -4,9 +4,9 @@ timestamps {
             checkout scm
         }
 
-        stage('Test') {
-            sh './gradlew test'
-        }
+       // stage('Test') {
+       //     sh './gradlew test'
+       // }
 
         if (BRANCH_NAME == 'master') {
             stage('Build') {
