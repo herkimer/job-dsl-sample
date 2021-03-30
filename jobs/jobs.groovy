@@ -16,3 +16,13 @@ job.with {
         shell 'echo test'
     }
 }
+
+foo = freeStyleJob("$folderName/test-job1")
+addDefaults(foo)
+addTimestampsWrapper(foo)
+
+foo.with {
+    steps {
+        shell 'echo test'
+    }
+}
