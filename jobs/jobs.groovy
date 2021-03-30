@@ -17,11 +17,11 @@ job.with {
     }
 }
 
-foo = freeStyleJob("$folderName/test-job1")
-addDefaults(foo)
-addTimestampsWrapper(foo)
+job = freeStyleJob("$folderName/test-job2")
+addDefaults(job)
+addTimestampsWrapper(job)
 
-foo.with {
+job.with {
     steps {
         shell 'echo test'
     }
